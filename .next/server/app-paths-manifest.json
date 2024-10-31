@@ -1,4 +1,4 @@
 {
-  "/page": "app/page.js",
-  "/wish/[name]/page": "app/wish/[name]/page.js"
+  "/message/[name]/page": "app/message/[name]/page.js",
+  "/page": "app/page.js"
 }

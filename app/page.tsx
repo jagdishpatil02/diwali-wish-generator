@@ -11,7 +11,7 @@ export default function Home() {
     e.preventDefault()
     if (name.trim()) {
       const urlName = name.trim().replace(/\s+/g, '-')
-      router.push(`/wish/${urlName}`)
+      router.push(`/message/${urlName}`)
     }
   }
 
@@ -29,9 +29,19 @@ export default function Home() {
         shadow-[0_0_40px_rgba(255,165,0,0.3)] border-2 border-orange-300/50 
         max-w-md w-full z-10">
         
-        <h1 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-600 via-yellow-500 
-          to-orange-600 bg-clip-text text-transparent animate-gradient-x">
-          Create a Diwali Wish
+        <h1 className="text-3xl font-bold text-center mb-8">
+        <span className="bg-gradient-to-r from-orange-600 via-yellow-500 to-orange-600 
+                    bg-clip-text text-transparent 
+                    drop-shadow-[0_2px_2px_rgba(0,0,0,0.1)]
+                    relative inline-block
+                    "
+                    style={{
+                      backgroundSize: '200% auto',
+                      animation: 'gradient-x 3s linear infinite'
+                    }}
+                  >
+            Create a Diwali Wish
+          </span>
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-6">
